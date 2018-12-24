@@ -26,7 +26,7 @@ else
  	CFLAGS += `pkg-config opencv4 --cflags`
 	LDLIBS =  `pkg-config opencv4 --libs`
 endif
-#
+
 # DEBUG
 ifneq ($(RELEASE),true)
 CFLAGS += -g -D _DEBUG
@@ -37,7 +37,7 @@ endif
 
 BIN := $(OUTDIR)/$(PROJECT)
 
-LDLIBS = `pkg-config opencv --libs` -lrrd -llog4cpp
+LDLIBS += -lrrd -llog4cpp
 
 SUFFIXES= .cpp .o
 .SUFFIXES: $(SUFFIXES) .
