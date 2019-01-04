@@ -1,4 +1,4 @@
-emeocv
+emeocv  [![Build Status](https://travis-ci.com/joaqim/emeocv.svg?branch=travis-ci)](https://travis-ci.com/joaqim/emeocv)
 ======
 
 Read and recognize the counter of an electricity meter with OpenCV.
